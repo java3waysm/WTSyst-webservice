@@ -23,6 +23,7 @@ public class ProfessorRestController {
 		return controle.select();
 	}
 
+	
 	@PostMapping(value = "/cadastrar_professor")
 	public ResponseEntity createCustomer(@RequestBody Professor professor){
 		this.controle.insert(professor);
