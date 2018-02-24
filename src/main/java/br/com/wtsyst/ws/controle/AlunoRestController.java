@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.wtsyst.bean.Aluno;
 import br.com.wtsyst.controle.AlunoBCI;
-import br.com.wtsyst.controle.impl.AlunoBC;
 
 @RestController
 public class AlunoRestController {
