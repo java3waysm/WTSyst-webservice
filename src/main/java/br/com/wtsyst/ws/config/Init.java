@@ -12,6 +12,7 @@ public class Init extends AbstractAnnotationConfigDispatcherServletInitializer {
 	@Override
 	protected Class[] getServletConfigClasses() {
 		return null;
+		
 	}
 
 	@Override
