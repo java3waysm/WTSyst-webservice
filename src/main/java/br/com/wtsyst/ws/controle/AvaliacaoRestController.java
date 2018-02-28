@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.wtsyst.bean.Avaliacao;
@@ -16,7 +17,7 @@ public class AvaliacaoRestController {
 	private AvaliacaoBCI controle;
 	
 
-	@GetMapping("/consultar_avaliacao")
+	@GetMapping("/consulta_avaliacao")
 	public List<Avaliacao> getCustomers() {
 		return controle.select();
 	}
