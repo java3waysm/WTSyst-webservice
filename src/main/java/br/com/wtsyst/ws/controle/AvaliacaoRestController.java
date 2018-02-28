@@ -20,5 +20,4 @@ public class AvaliacaoRestController {
 	public List<Avaliacao> getCustomers() {
 		return controle.select();
 	}
-
 }
