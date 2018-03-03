@@ -20,16 +20,17 @@ public class AlunoRestController {
 	@Autowired
 	private AlunoBCI controle;
 	
-
-	@GetMapping("/consultar_alunos")
-	public List<Aluno> getCustomers() {
-		return controle.select();
-	}
-	
 	@PostMapping(value = "/cadastrar_alunos")
 	public ResponseEntity cadastrarAlunos(@RequestBody Aluno aluno) {
 		this.controle.insert(aluno);
 		
 		return new ResponseEntity(aluno, HttpStatus.OK);
 	}
+	
+	@GetMapping("/consultar_alunos")
+	public List<Aluno> getCustomers() {
+		return controle.select();
+	}
+	
+
 }
