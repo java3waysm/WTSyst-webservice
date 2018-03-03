@@ -20,7 +20,7 @@ public class AlunoRestController {
 	@Autowired
 	private AlunoBCI controle;
 	
-	@PostMapping(value = "/cadastrar_alunos")
+	@PostMapping(value = "/cadastrar_aluno")
 	public ResponseEntity cadastrarAlunos(@RequestBody Aluno aluno) {
 		this.controle.insert(aluno);
 		
