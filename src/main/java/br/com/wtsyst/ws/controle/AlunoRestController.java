@@ -27,7 +27,7 @@ public class AlunoRestController {
 		return new ResponseEntity(aluno, HttpStatus.OK);
 	}
 	
-	@GetMapping("/consultar_alunos")
+	@GetMapping("/consultar_aluno")
 	public List<Aluno> getCustomers() {
 		return controle.select();
 	}
